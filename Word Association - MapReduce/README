@@ -1,0 +1,4 @@
+http://www-inst.eecs.berkeley.edu/~cs61c/fa13/proj/01/
+
+"For this project, you're finally going to roll up your sleeves and use MapReduce to answer a big data problem. The question you're going to answer is this: given a word, what other words are statistically associated with it? If I say 'love', or 'death', or 'terrorism', what other words and concepts go with it?"
+"Your task is to produce an ordered list of words for the target word sorted by generalized co-occurrence rate, ordered with the biggest co-occurrence rates at the top. The data will be the same data we used in labs 2 and 3. This isn't the most sophisticated text-analysis algorithm out there, but it's enough to illustrate what you can do with MapReduce."
