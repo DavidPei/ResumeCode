@@ -1,0 +1,14 @@
+lui $r0 0x01
+addi $r1 $r1 0x02
+or $r0 $r0 $r1
+andi $r1 $r1 0x00
+lui $r1 0x03
+addi $r2 $r2 0x01
+or $r1 $r1 $r2
+andi $r2 $r2 0x00
+addp8 $r2 $r0 $r1
+mulp8 $r3 $r0 $r1
+andi $r2 $r2 0x00
+andi $r3 $r3 0x00
+subp8 $r2 $r0 $r1
+divp8 $r3 $r0 $r1

@@ -1,0 +1,4 @@
+addi $r0 $r0 0x03
+disp $r0 0x00
+addi $r1 $r1 0x04
+disp $r1 0x01
