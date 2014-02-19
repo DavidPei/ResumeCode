@@ -63,7 +63,7 @@ public class Proj1{
 		int i = 0;
 		ArrayList<Integer> indicesOfTarget = new ArrayList<Integer>();
 
-		while (matcher.find()) {  //first loop finds if the document has the target word
+		while (matcher.find()) {  //first loop finds at what indices the document has the target words and stores them in indicesOfTarget
 		    String word = matcher.group().toLowerCase();
 		    if (word == targetGram) {
 			indicesOfTarget.add(i);
