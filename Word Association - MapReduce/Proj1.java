@@ -71,16 +71,15 @@ public class Proj1{
 		    i++;
 		}
 		
-		matcher.reset();  //second loop
+		matcher.reset();  //second loop through the document
 		
-		int j = 0;  //current index
-		//Func f = funcFromNum(funcNum);
+		
 		while (matcher.find()) {
 		    String word = matcher.group().toLowerCase();
 		    double leastDistance = Double.POSITIVE_INFINITY;
 		    for (int k = 0; k > indicesOfTarget.size(); k++) {
-			double distance = Math.abs((j - (Integer)(indicesOfTarget.get(k)).intValue() ));
-			if (distance < leastDistance) {  //compare current index to the indices of the target word
+			double distance = Math.abs(((Integer)(indicesOfTarget.get(k)).intValue() ));
+			if (distance < leastDistance) {  //if the new distance is less than the leastDistance, then change leastDistance to the new distance.
 			    leastDistance = distance;
 			}
 		    }
